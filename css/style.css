@@ -16,6 +16,14 @@ html, body, header, #intro {
     .navbar:not(.top-nav-collapse) {
         background: #303f60;
     }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro__suptitle {
+        font-size: 20px;
+    }
 }
 
 .map-container{
