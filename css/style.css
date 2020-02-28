@@ -4,6 +4,8 @@ html, body, header, #intro {
 
 #intro {
     background: url(../img/bg.jpg) no-repeat center center fixed;
+    max-width: 100%;
+    height: auto;
     -webkit-background-size: cover;
     background-size: cover;
 }
