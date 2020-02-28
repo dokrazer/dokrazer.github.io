@@ -4,8 +4,8 @@ html, body, header, #intro {
 
 #intro {
     background: url(../img/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .top-nav-collapse {
