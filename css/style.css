@@ -2,7 +2,7 @@ html, body, header, #intro {
     height: 100%;
 }
 
-#intro {
+.intro {
     background: url(../img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -24,10 +24,6 @@ html, body, header, #intro {
     .intro__suptitle {
         font-size: 1rem!important;
     }
-
-    #intro {
-    background: #999!important;
-}
 }
 
 .map-container{
