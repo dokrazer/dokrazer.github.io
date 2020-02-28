@@ -18,11 +18,11 @@ html, body, header, #intro {
     }
 
     .intro__title {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .intro__suptitle {
-        font-size: 20px;
+        font-size: 10px;
     }
 }
 
