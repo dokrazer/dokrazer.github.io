@@ -3,7 +3,7 @@ html, body, header, #intro {
 }
 
 #intro {
-    background: url(../img/bg.jpg) no-repeat center center fixed contain;
+    background: url(../img/bg.jpg) no-repeat center center fixed contain!important;
 }
 
 .top-nav-collapse {
