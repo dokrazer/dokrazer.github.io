@@ -4,8 +4,6 @@ html, body, header, #intro {
 
 #intro {
     background: url(../img/bg.jpg) no-repeat center center fixed;
-    max-width: 100%!important;
-    height: auto!important;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -26,6 +24,10 @@ html, body, header, #intro {
     .intro__suptitle {
         font-size: 1rem!important;
     }
+
+    #intro {
+    background: #999!important;
+}
 }
 
 .map-container{
