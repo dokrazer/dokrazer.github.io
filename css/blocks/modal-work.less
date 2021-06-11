@@ -1,0 +1,152 @@
+// main: ../style.less
+
+.modal-work {
+    display: flex;
+}
+
+.modal-work__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.modal-work__photo {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+
+    transform: translate3d(-50%, -50%, 0);
+
+    @media @mobile {
+        position: relative;
+    }
+}
+
+.modal-work__content {
+    position: relative;
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+
+    @media @tablet {
+        padding: 3.4rem 1rem 1rem 1rem;
+    }
+
+    @media @mobile {
+        position: absolute;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 100%;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+
+    @media @tablet {
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__title {
+    margin-bottom: .2rem;
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @grey;
+    text-transform: uppercase;
+
+    @media @tablet {
+        font-size: 1rem;
+    }
+}
+
+.modal-work__info-divider {
+    margin: 0 1rem;
+}
+
+.modal-work__client {
+    margin-bottom: 2.2rem;
+
+    @media @tablet {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.modal-work__client-title {
+    margin-bottom: .2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work__client-company {
+    font-size: .94rem;
+    font-style: italic;
+    color: @grey;
+}
+
+.modal-work__text {
+    margin-bottom: 8.66rem;
+    font-size: .8rem;
+    line-height: 2;
+    color: @grey;
+    font-weight: 300;
+
+    @media @tablet {
+        margin-bottom: 2.5rem;
+    }
+
+    @media @mobile {
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.modal-work__btn {
+    padding: 0;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    &:focus {
+            outline: 0;
+        }
+
+    font-family: inherit;
+    font-size: .94rem;
+    color: @black;
+    text-transform: uppercase;
+}
