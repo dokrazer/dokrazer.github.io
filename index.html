@@ -1,1147 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBOVIO</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-
 <body>
-
-    <!--------- Header ---------->
+    <!---HEADER--->
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-
-                <div class="user">
-                    <div class="user__avatar">
-                        <img src="images/Avatar" alt="">
-                    </div>
-                    <div class="user__content">
-                        <div class="user__name">Konstantin
-                            <br>Matusyak</div>
-                        <div class="user__prof">Film editor &amp; Graphic / Motion designer</div>
-                    </div>
-                </div>
-
-                <nav class="nav" id="nav">
-                    <a class="nav__link" href="#" data-scroll="#works">work</a>
-                    <a class="nav__link" href="#" data-scroll="#about_me">about me</a>
-                    <a class="nav__link" href="#" data-scroll="#blog">blog</a>
-                    <a class="nav__link" href="" data-modal="#modal_resume">contact</a>
-                    <a class="nav__link nav__link--btn" href="" data-modal="#modal_hire_me">hire me</a>
-                </nav>
-
-                    <button class="burger" type="button" id="navToggle">
-                        <i class="fas fa-bars burger__icon"></i>
-                    </button>
-
-            </div>
+        <div class="container header-container">
+            <a class="logo">
+                <img src="img/logo.svg" alt="Webovio Logo">
+            </a>
+            <button class="burger btn-reset" aria-label="Open menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </div>
     </header>
-    <!-------- /.Header --------->
+    <!---/HEADER--->
+    <main>
+        <!---HERO--->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">A place where</span>
+                    <h1 class="hero-title">A&nbsp;creative agency for redemptive brands</h1>
+                    <p class="hero-descr">Anteelo is&nbsp;a&nbsp;leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
+                    <a href="#" class="hero-link link">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                    c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                    C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                            </g>
 
-    <!--------- Intro ---------->
-    <section class="intro">
-        <div class="container">
-            <div class="intro__inner">
-                <div class="intro__content">
-                    <h2 class="intro__subtitle">Hello, I'm</h2>
-                    <h1 class="intro__title">Konstantin Matusyak</h1>
-                    <div class="intro__text">Film editor &amp; Graphic / Motion designer</div>
+                        </g>
 
-                    <div class="social">
-                        <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp social__link"></i></a>
-
-                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram social__link"></i></a>
-
-                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f social__link"></i></a>
-
-                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter social__link"></i></a>
-
-                        <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat-ghost social__link"></i></a>
-
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube social__link"></i></a>
-                    </div>
-
-                    <a class="btn" href="" data-modal="#modal_hire_me">HIRE ME</a>
-                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
-                </div>
-
-                <img class="intro__photo" src="images/Main%20photo" alt="">
-            </div>
-            <!-- /.intro__inner -->
-
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-------- /.Intro --------->
-
-    <!--------- Works ---------->
-    <div class="works" id="works">
-        <div class="container">
-
-            <div class="works__nav">
-                <a class="works__nav-link" href="#" data-filter="all">All</a>
-                <a class="works__nav-link" href="#" data-filter="Photo">Photo</a>
-                <a class="works__nav-link" href="#" data-filter="Graphic">Graphic</a>
-                <a class="works__nav-link" href="#" data-filter="Motion">Motion</a>
-            </div>
-
-            <div class="portfolio" id="portfolio">
-                <div class="portfolio__col" data-cat="Photo">
-                    <div class="work" data-modal="#modal_project_1">
-                        <img class="work__image" src="https:/placehold.it/370x300/333" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Photo</div>
-                            <div class="work__title">
-                                Project title 1
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Graphic">
-                    <div class="work" data-modal="#modal_project_2">
-                        <img class="work__image" src="https://placehold.it/370x300/235" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Graphic</div>
-                            <div class="work__title">
-                                Project title 2
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Motion">
-                    <div class="work" data-modal="#modal_project_3">
-                        <img class="work__image" src="https://placehold.it/370x300/455" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Motion</div>
-                            <div class="work__title">
-                                Project title 3
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Motion">
-                    <div class="work" data-modal="#modal_project_4">
-                        <img class="work__image" src="https://placehold.it/370x300/455" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Motion</div>
-                            <div class="work__title">
-                                Project title 4
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Graphic">
-                    <div class="work" data-modal="#modal_project_5">
-                        <img class="work__image" src="https://placehold.it/370x300/235" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Graphic</div>
-                            <div class="work__title">
-                                Project title 5
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Motion">
-                    <div class="work" data-modal="#modal_project_6">
-                        <img class="work__image" src="https://placehold.it/370x300/455" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Motion</div>
-                            <div class="work__title">
-                                Project title 6
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Photo">
-                    <div class="work" data-modal="#modal_project_7">
-                        <img class="work__image" src="https:/placehold.it/370x300/333" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Photo</div>
-                            <div class="work__title">
-                                Project title 7
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Photo">
-                    <div class="work" data-modal="#modal_project_8">
-                        <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Photo</div>
-                            <div class="work__title">
-                                Project title 8
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__col" data-cat="Photo">
-                    <div class="work" data-modal="#modal_project_9">
-                        <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-                        <div class="work-content">
-                            <div class="work__cat">Photo</div>
-                            <div class="work__title">
-                                Project title 9
-                                <time class="work__date" datetime="2019-12-17 21:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
+                        </svg>
+                        <span>Get in&nbsp;touch</span>
+                    </a>
                 </div>
             </div>
-            <!--  /.portfolio  -->
+        </section>
+        <!---/HERO--->
 
-            <div class="text-center">
-                <a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+        <!---SERVICES--->
+        <section class="services">
+            <div class="container">
+                <h2 class="site-title services-title">Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way to&nbsp;Kick off Your Product Idea</h2>
+                <ul class="services-list list-reset">
+                    <li class="services-item">
+                        <h3 class="services-subtitle">Product Design Sprint</h3>
+                        <p class="services-descr">A&nbsp;five-day workshop that will help you answer crucial business questions</p>
+                        <a href="#" class="services-link link">
+                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                                </g>
+    
+                            </g>
+    
+                            </svg>
+                            <span>Read more</span>
+                        </a>
+                    </li>
+                    <li class="services-item">
+                        <h3 class="services-subtitle">Scoping Session</h3>
+                        <p class="services-descr">A&nbsp;workshop aimed at&nbsp;shaping your business idea, answering questions regarding project planning</p>
+                        <a href="#" class="services-link link">
+                            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                                </g>
+    
+                            </g>
+    
+                            </svg>
+                            <span>Read more</span>
+                        </a>
+                    </li>
+                    <li class="services-item">
+                        <h3 class="services-subtitle">UX <br> Review</h3>
+                        <p class="services-descr">An&nbsp;evaluation which will help you radically improve your product</p>
+                        <a href="#" class="services-link link">
+                            <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                                </g>
+    
+                            </g>
+    
+                            </svg>
+                            <span>Read more</span>
+                        </a>
+                    </li>
+                    <li class="services-item">
+                        <h3 class="services-subtitle">Code <br> Review</h3>
+                        <p class="services-descr">Do&nbsp;you know what one of&nbsp;the key secrets of&nbsp;success is&nbsp;what makes people successful in&nbsp;business</p>
+                        <a href="#" class="services-link link">
+                            <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                                </g>
+    
+                            </g>
+    
+                            </svg>
+                            <span>Read more</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </section>
+        <!---/SERVICES--->
 
-        </div>
-        <!--  /.container  -->
-    </div>
-    <!-------- /.Works --------->
+        <!---GET-STARTED--->
+        <section class="get-started">
+            <div class="container">
+                <h2 class="get-started-title">Let&rsquo;s make something amazing together.</h2>
+                <a href="#" class="get-started-link link">
+                    <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+                                c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+                                C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+                        </g>
 
-    <!--------- News ---------->
-    <section class="about" id="about_me">
-        <div class="container">
+                    </g>
 
-            <div class="about__inner">
-                <div class="about__photo">
-                    <img class="img" src="images/photo2" alt="">
-                </div>
-
-                <div class="about__content">
-                    <h3 class="about__title">about me</h3>
-                    <h2 class="about__bigtitle">who am i</h2>
-                    <div class="about__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, fuga ab id ipsam itaque possimus reiciendis dolorum ea, placeat eaque laboriosam, labore. Laboriosam maiores quibusdam ad, vero nisi possimus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, fuga ab id ipsam itaque possimus reiciendis dolorum ea, placeat eaque laboriosam, labore. Laboriosam maiores quibusdam ad, vero nisi possimus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad, fuga ab id ipsam itaque possimus reiciendis dolorum ea, placeat eaque laboriosam, labore. Laboriosam maiores quibusdam ad, vero nisi possimus.</p>
-                    </div>
-                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
-                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
-                </div>
-                <!--  /.about__content  -->
+                    </svg>
+                    <span>Let's get started</span>
+                </a>
             </div>
-            <!-- /.about__inner -->
-
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-------- /.News --------->
-
-    <!--------- Reviews ---------->
-    <div class="reviews">
-        <div class="container">
-
-            <div class="reviews__item">
-                <div class="reviews__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ea nihil unde laboriosam, officia ipsam qui, tenetur pariatur accusamus nostrum adipisci modi laborum ab fugiat iste, quae in soluta enim!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ea nihil unde laboriosam, officia ipsam qui, tenetur pariatur accusamus nostrum adipisci modi laborum ab fugiat iste, quae in soluta enim!</p>
-                </div>
-
-                <div class="reviews__autor">
-                    <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
-                    <div class="reviews__name">Edward M. Brooks</div>
-                    <div class="reviews__company">Marketing House</div>
-                    <div class="reviews__rating">
-                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
-                        <img class="reviews__star--unactive" src="images/star.svg" width="13" height="13" alt="">
-                    </div>
-                </div>
-            </div>
-            <!--  /.Reviews__item  -->
-
-        </div>
-        <!--  /.container  -->
-    </div>
-    <!-------- /.Reviews --------->
-
-    <!--------- News ---------->
-    <section class="news" id="blog">
-        <div class="container">
-
-            <div class="news__header">
-                <h3 class="news__title">read me</h3>
-                <div class="news__text">Sometimes i write something smart</div>
-            </div>
-
-            <div class="articles">
-                <div class="articles__col">
-                    <div class="articles__item">
-                        <div class="articles__header">
-                            <time class="articles__date">10
-                                <br>june</time>
-                            <a href="#">
-                                <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                            </a>
-                        </div>
-                        <div class="articles__content">
-                            <h4 class="articles__title">
-                            <a href="#">TEN THE BEST APP IN 2017</a>
-                        </h4>
-                            <div class="articles__cat">CATEGORY</div>
-                            <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos beatae, deleniti eveniet id deserunt facilis nam, corporis magni, et soluta quis illum? Necessitatibus optio, animi minima? Veritatis, quod, ab!</p>
-                            </div>
-                        </div>
-                        <a class="btn  btn--sm" href="#">READ MORE</a>
-                    </div>
-                </div>
-
-                <div class="articles__col">
-                    <div class="articles__item">
-                        <div class="articles__header">
-                            <time class="articles__date">15
-                                <br>june</time>
-                            <a href="#">
-                                <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                            </a>
-                        </div>
-                        <div class="articles__content">
-                            <h4 class="articles__title">
-                            <a href="#">WEBSITE INSPIRATION</a>
-                        </h4>
-                            <div class="articles__cat">CATEGORY</div>
-                            <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos beatae, deleniti eveniet id deserunt facilis nam, corporis magni, et soluta quis illum? Necessitatibus optio, animi minima? Veritatis, quod, ab!</p>
-                            </div>
-                        </div>
-                        <a class="btn  btn--sm" href="#">READ MORE</a>
-                    </div>
-                </div>
-
-                <div class="articles__col">
-                    <div class="articles__item">
-                        <div class="articles__header">
-                            <time class="articles__date">20
-                                <br>june</time>
-                            <a href="#">
-                                <img class="articles__photo" src="https://placehold.it/370x257" alt="">
-                            </a>
-                        </div>
-                        <div class="articles__content">
-                            <h4 class="articles__title">
-                            <a href="#">CHANGES IN SOCIAL MEDIA</a>
-                        </h4>
-                            <div class="articles__cat">CATEGORY</div>
-                            <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos beatae, deleniti eveniet id deserunt facilis nam, corporis magni, et soluta quis illum? Necessitatibus optio, animi minima? Veritatis, quod, ab!</p>
-                            </div>
-                        </div>
-                        <a class="btn  btn--sm" href="#">READ MORE</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /.articles -->
-
-            <div class="news__footer">
-                <a class="news__link" href="#">See more posts</a>
-            </div>
-
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-------- /.News --------->
-
-    <!--------- Footer ---------->
+        </section>
+        <!---/GET-STARTED--->
+    </main>
+    <!---FOOTER--->
     <footer class="footer">
         <div class="container">
-
-            <div class="footer__inner">
-                <div class="footer__credits">
-                    <div class="footer__copyright">
-                        &copy; 2020 Ganje - Website Production
-                    </div>
-                    <div class="footer__social">
-                        <a href="https:/web.whatsapp.com" target="_blank">
-                            <img src="images/whatsapp%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                        <a href="https:/instagram.com" target="_blank">
-                            <img src="images/instagram%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                        <a href="https:/facebook.com" target="_blank">
-                            <img src="images/facebook%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                        <a href="https:/twitter.com" target="_blank">
-                            <img src="images/twitter%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                        <a href="https:/snapchat.com" target="_blank">
-                            <img src="images/snapchat%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                        <a href="https:/youtube.com" target="_blank">
-                            <img src="images/youtube%C2%A0gray.svg" height="21" alt="">
-                        </a>
-                    </div>
+            <div class="footer-top">
+                <div class="footer-contacts-item">
+                    <span class="footer-contacts-text">Phone</span>
+                    <a href="tel:+79998361490" class="footer-contacts-value">+7 999 836 14 90</a>
                 </div>
-                <!-- /.footer__credits -->
-
-                <nav class="footer__nav">
-                    <a class="footer__nav-link" data-scroll="#works">Work</a>
-                    <a class="footer__nav-link" data-scroll="#about_me">About me</a>
-                    <a class="footer__nav-link" data-scroll="#blog">Blog</a>
-                    <a class="footer__nav-link" href="#scroll_contact">Contact</a>
-                    <a class="footer__nav-link footer__nav-link--btn" href="" data-modal="#modal_hire_me">Hire me</a>
-                </nav>
+                <div class="footer-contacts-item">
+                    <span class="footer-contacts-text">Address</span>
+                    <address class="footer-contacts-value">491 Merlin Crest Suite 963</address>
+                </div>
             </div>
-            <!-- /.footer__inner -->
-
-        </div>
-        <!-- /.container -->
-    </footer>
-    <!-------- /.Footer --------->
-
-
-
-
-
-
-
-
-
-    <!--======================= Modals =======================-->
-
-    <!--------- Modal Title ---------->
-
-    <div class="modal" id="modal_project_1">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 1</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_2">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 2</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_3">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 3</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_4">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 4</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_5">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 5</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_6">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 6</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_7">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 7</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_8">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 8</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <div class="modal" id="modal_project_9">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal-work">
-                <div class="modal-work__preview">
-                    <div data-slider="slick">
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780" alt="">
-                        </div>
-                        <div>
-                            <img class="modal-work__photo" src="https:/placehold.it/790x780/333" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-work__content">
-
-                    <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 9</h3>
-                        <div class="modal-work__info">
-                            category <span class="modal-work__info-divider">|</span> 2020
-                        </div>
-                    </div>
-
-                    <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Creative Agency</div>
-                    </div>
-
-                    <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, vitae molestiae voluptate quidem temporibus doloribus. Facere ad velit, incidunt, porro, in totam quas, cupiditate debitis modi tempore rerum saepe.</p>
-                    </div>
-
-                    <div class="modal-work__footer">
-                        <button class="modal-work__btn slickPrev" type="button">
-                            <img src="images/back.svg" height="11" alt=""> Previous
-                        </button>
-                        <button class="modal-work__btn slickNext" type="button">
-                            Next
-                            <img src="images/next.svg" height="11" alt="">
-                        </button>
-                    </div>
-
-                </div>
-                <!-- modal-work__content -->
-            </div>
-            <!--/.modal-work -->
-        </div>
-        <!--/.modal__dialog -->
-    </div>
-    <!--/.modal -->
-
-    <!--------- Modal Resume ---------->
-    <div class="modal" id="modal_resume">
-        <div class="modal__dialog">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="modal__content">
-                <h3 class="modal__title  text-center">RESUME</h3>
-
-                <div class="text-center">
-                    <a class="btn btn--thin" href="#">DOWNLOAR PDF</a>
-                    <a class="btn btn--thin" href="#">PRINT</a>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline__col timeline__col--left">
-                        <h4 class="timeline__title">EXPERIENCE</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                            <h5 class="timeline__subtitle">Freelancer</h5>
-                            <div class="timeline__position">Art Director</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- timeline__col timeline__col--left -->
-                    <div class="timeline__col timeline__col--right">
-                        <h4 class="timeline__title">EDUCATION</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA University, USA</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2002 - 2005</time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA Collage of Art, USA</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                        <h4 class="timeline__title">SKILLS</h4>
-
-                        <div class="progress-bar">
-                            <div class="progress-bar__item">
-                                <div class="progres-bar__left">
-                                    <div class="progress-bar__title">UI/UX Design</div>
-                                </div>
-                                <div class="progres-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 50%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="progress-bar__item">
-                                <div class="progres-bar__left">
-                                    <div class="progress-bar__title">Illustrator</div>
-                                </div>
-                                <div class="progres-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="progress-bar__item">
-                                <div class="progres-bar__left">
-                                    <div class="progress-bar__title">Photoshop</div>
-                                </div>
-                                <div class="progres-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 70%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="progress-bar__item">
-                                <div class="progres-bar__left">
-                                    <div class="progress-bar__title">Sketch</div>
-                                </div>
-                                <div class="progres-bar__right">
-                                    <div class="progress-bar__bar">
-                                        <div class="progress-bar__progress" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.progress-bar -->
-
-                        <h4 class="timeline__title">AWARDS</h4>
-
-                        <div class="timeline__item">
-                            <time class="timeline__date" datetime="11-21-2019">2010</time>
-                            <h5 class="timeline__subtitle">UI/UX Design</h5>
-                            <div class="timeline__position">LA University, USA</div>
-                            <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat est ratione repellendus ut magnam, eligendi maiores blanditiis optio similique sunt velit corporis accusantium autem numquam quis consequuntur quam aliquam libero!</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.timeline__col timeline__col--right -->
-                </div>
-                <!-- /.timeline -->
-
-                <div class="text-center">
-                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
-                </div>
-
-            </div>
-            <!-- /.modal__content -->
-
-        </div>
-        <!-- /.modal__dialog -->
-    </div>
-    <!-------- /.Modal Resume --------->
-
-    <!--------- Modal Hire Me ---------->
-    <div class="modal" id="modal_hire_me">
-        <div class="modal__dialog modal__dialog--sm">
-
-            <button class="modal__close" type="button" data-close>
-                <img src="images/modal-close.svg" alt="Close">
-            </button>
-
-            <div class="contact">
-                <div class="contact__left">
-                    <h3 class="modal__title mb-0">LET'S TALK!</h3>
-                    <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
-
-                    <ul class="contact__info">
-                        <li class="comtact__info-item">
-                            <img class="comtact__info-icon" src="images/phone.svg" alt=""> (200) 100 3000
-                        </li>
-                        <li class="comtact__info-item">
-                            <img class="comtact__info-icon" src="images/mail.svg" alt=""> designer@ui43.com
-                        </li>
+            <div class="footer-middle">
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-list list-reset">
+                        <li class="footer-item"><a href="#" class="footer-link">Strategy Design</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Product Design</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Content Strategy</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Brand Strategy</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Development </a></li>
                     </ul>
-
-                    <form action="telegram.php" class="form" method="post" autocomplete="off">
-                        <div class="form__group">
-                            <label class="form__label" for="input-email">Adress e-mail</label>
-                            <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Type your e-mail...">
-                        </div>
-
-                        <div class="form__group">
-                            <label class="form__label" for="input-text">Request</label>
-                            <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
-                        </div>
-
-                        <div class="text-right">
-                            <button class="btn" type="submit">SEND</button>
-                        </div>
-
-                    </form>
                 </div>
-                <!-- /.contact__left -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Help and Advice</h3>
+                    <ul class="footer-list list-reset">
+                        <li class="footer-item"><a href="#" class="footer-link">How it works</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Contact Support</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-list list-reset">
+                        <li class="footer-item"><a href="#" class="footer-link">About</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Blog</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Contact</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <p class="footer-text">Feel free to get in touch with us vai email</p>
+                    <a href="mailto:info.webovio@gmail.com" class="footer-mail">info.webovio@gmail.com</a>
+                    <ul class="social list-reset">
+                        <li class="social-item"><a href="#" class="social-link social-link-fb" target="_blank" aria-label="Link to Facebook"><svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></svg></a></li>
+
+                        <li class="social-item"><a href="#" class="social-link social-link-tw" target="_blank" aria-label="Link to Twitter"><svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"/></svg></a></li>
+
+                        <li class="social-item"><a href="#" class="social-link social-link-g" target="_blank" aria-label="Link to Google+"><svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m12 24c6.624 0 12-5.376 12-12s-5.376-12-12-12-12 5.376-12 12 5.376 12 12 12zm4.283-12.857h1.718v-1.717h1.718v1.718h1.703v1.718h-1.703v1.718h-1.718v-1.718h-1.718zm-7.704-5.144c1.514 0 2.908.533 4.017 1.563l-1.626 1.578c-.639-.625-1.514-.924-2.391-.924-2.076 0-3.736 1.718-3.736 3.779s1.655 3.779 3.736 3.779c1.577 0 3.14-.924 3.392-2.579h-3.392v-2.061h5.657c.063.329.092.658.092 1.001 0 3.426-2.299 5.864-5.749 5.864v.001c-3.329 0-6.001-2.686-6.001-6.001s2.672-6 6.001-6z"/></svg></a></li>
+
+                        <li class="social-item"><a href="#" class="social-link social-link-in" target="_blank" aria-label="Link to LinkeIn"><svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></svg></a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- /.contact -->
-
+            <div class="footer-bottom">
+                <a class="logo">
+                    <img src="/img/footer-logo.svg" alt="Webovio Logo">
+                </a>
+                <small class="copyright">&copy;&nbsp;2020@webovio. All Rights Reserved.</small>
+            </div>
         </div>
-        <!-- /modal__dialog modal__dialog--sm -->
-    </div>
-    <!-------- /.Modal Hire Me --------->
-
-    <!--------- JS ---------->
-    <script src="js/slick.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-------- /.JS --------->
-
+    </footer>
+    <!---/FOOTER--->
 </body>
-
 </html>
